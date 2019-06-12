@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>moose_simulator</name>
+  <version>0.0.0</version>
+  <description>Packages for simulating Moose</description>
+
+  <maintainer email="tbaltovski@clearpathrobotics.com">Tony Baltovski</maintainer>
+
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <exec_depend>moose_gazebo</exec_depend>
+
+  <export><metapackage/></export>
+</package>
