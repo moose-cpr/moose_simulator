@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- Configuration of Moose which you would like to simulate.
+       See moose_description for details. -->
+  <arg name="config" default="base" />
+
+  <!-- Load Moose's description, controllers, and teleop nodes. -->
+  <param name="robot_description"
+         command="$(find moose_gazebo)/scripts/env_run
+                    $(find moose_gazebo)/urdf/configs/$(arg config)
+                  $(find xacro)/xacro $(find moose_gazebo)/urdf/moose.urdf.xacro  --inorder" />
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+  
+  <!-- joint_state_publisher is needed to pushish the suspension joints. -->
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
+  <include file="$(find moose_gazebo)/launch/control_sim.launch" />
+  <include file="$(find moose_control)/launch/teleop.launch" />
+
+  <!-- Spawn Moose -->
+  <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model"
+	      args="-urdf -model moose -param robot_description -x 0 -y 0 -z 1.0" />
+</launch>
