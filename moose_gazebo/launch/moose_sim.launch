@@ -19,4 +19,6 @@
   <!-- Spawn Moose -->
   <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model"
 	      args="-urdf -model moose -param robot_description -x $(arg x) -y $(arg y) -z $(arg z)" />
+
+  <node name="dummy_keyswitch" pkg="moose_gazebo" type="dummy_keyswitch.py" />
 </launch>
