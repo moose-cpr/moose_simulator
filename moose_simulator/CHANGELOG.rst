@@ -1,0 +1,11 @@
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Changelog for package moose_simulator
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Forthcoming
+-----------
+* Merge branch 'master' into 'master'
+  Initial Moose simulator
+  See merge request research/moose_simulator!1
+* Initial Moose simulator
+* Contributors: Loic Azzalini, Tony Baltovski
