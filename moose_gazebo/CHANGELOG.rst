@@ -2,8 +2,8 @@
 Changelog for package moose_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.1.0 (2019-12-17)
+------------------
 * Merge pull request `#1 <https://github.com/moose-cpr/moose_simulator/issues/1>`_ from dniewinski/gazebo_cleanup
   Gazebo cleanup
 * Added script install
