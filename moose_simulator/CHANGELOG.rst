@@ -2,6 +2,9 @@
 Changelog for package moose_simulator
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.1.0 (2019-12-17)
 ------------------
 * Merge branch 'master' into 'master'
