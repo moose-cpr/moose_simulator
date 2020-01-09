@@ -2,8 +2,8 @@
 Changelog for package moose_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.1.1 (2020-01-09)
+------------------
 * [moose_gazebo] Updated dependencies.
 * Contributors: Tony Baltovski
 
