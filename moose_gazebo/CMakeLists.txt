@@ -3,7 +3,6 @@ project(moose_gazebo)
 
 find_package(catkin REQUIRED COMPONENTS
   gazebo_ros
-  roslaunch
 )
 
 find_package(gazebo REQUIRED)
@@ -25,4 +24,7 @@ install(DIRECTORY launch worlds
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
 )
 
-roslaunch_add_file_check(launch/moose_world.launch)
+if (CATKIN_ENABLE_TESTING)
+  find_package(roslaunch REQUIRED)
+  roslaunch_add_file_check(launch/moose_world.launch)
+endif()
