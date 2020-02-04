@@ -2,6 +2,9 @@
 Changelog for package moose_simulator
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.1.1 (2020-01-09)
 ------------------
 
