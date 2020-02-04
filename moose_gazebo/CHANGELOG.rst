@@ -2,8 +2,8 @@
 Changelog for package moose_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.1.2 (2020-02-04)
+------------------
 * Add the config directory to the install target; omitting it prevents the moose_world.launch from launching correctly
 * Contributors: Chris I-B, Tony Baltovski
 
