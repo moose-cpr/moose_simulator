@@ -16,9 +16,8 @@ include_directories(
   ${GAZEBO_INCLUDE_DIRS}
 )
 
-install(DIRECTORY scripts
-  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
-)
+install(PROGRAMS scripts/dummy_keyswitch
+ DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
 
 install(DIRECTORY launch worlds config
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
