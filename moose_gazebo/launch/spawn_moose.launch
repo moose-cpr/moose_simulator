@@ -7,6 +7,7 @@
   <arg name="x" default="0.0" />
   <arg name="y" default="0.0" />
   <arg name="z" default="1.0" />
+  <arg name="yaw" default="0.0" />
 
   <!-- Load Moose's description -->
   <include file="$(find moose_description)/launch/description.launch">
@@ -18,7 +19,7 @@
 
   <!-- Spawn Moose -->
   <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model"
-	      args="-urdf -model moose -param robot_description -x $(arg x) -y $(arg y) -z $(arg z)" />
+	      args="-urdf -model moose -param robot_description -x $(arg x) -y $(arg y) -z $(arg z) -R 0 -P 0 -Y $(arg yaw)" />
 
   <node name="dummy_keyswitch" pkg="moose_gazebo" type="dummy_keyswitch" />
 </launch>
