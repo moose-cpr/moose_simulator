@@ -2,8 +2,8 @@
 Changelog for package moose_gazebo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.1.3 (2020-08-14)
+------------------
 * Add the yaw argument to spawn_moose
 * Rename spawn launch (`#5 <https://github.com/moose-cpr/moose_simulator/issues/5>`_)
   * Add the scripts folder to the install target too
